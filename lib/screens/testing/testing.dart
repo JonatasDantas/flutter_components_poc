@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components_poc/components/platform_button.dart';
+import 'package:wakelock/wakelock.dart';
 
 class TestingPage extends StatefulWidget {
   static _TestingPageState generalState;
@@ -38,6 +39,7 @@ class _TestingPageState extends State<TestingPage> {
   void setRunningState(bool value) {
     setState(() {
       runningState = value;
+      Wakelock.toggle(on: value);
     });
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components_poc/screens/dashboard.dart';
+import 'package:flutter_components_poc/screens/dashboard/dashboard.dart';
+import 'package:flutter_components_poc/screens/lifecycle_manager.dart';
 
 void main() {
   runApp(ComponentsApp());
@@ -8,9 +9,11 @@ void main() {
 class ComponentsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.light(),
-      home: Dashboard(),
+    return LifeCycleManager(
+      child: MaterialApp(
+        theme: ThemeData.light(),
+        home: Dashboard(),
+      ),
     );
   }
 }

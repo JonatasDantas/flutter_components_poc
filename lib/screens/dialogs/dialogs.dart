@@ -2,18 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_components_poc/components/platform_button.dart';
 import 'package:flutter_components_poc/components/platform_dialog.dart';
 
-class Dashboard extends StatelessWidget {
+class DialogsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Teste de Componentes"),
-      ),
-      body: buildContents(context),
-    );
-  }
-
-  Widget buildContents(BuildContext context) {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
